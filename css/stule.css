@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+header {
+  background: url("../img/bacgraund.png") center center;
+  background-size: cover; }
+
+.title {
+  background: rgba(0, 0, 0, 0.85);
+  padding: 90px 0 110px 0;
+  color: white; }
+  .title h1 {
+    font-size: 30px;
+    margin-bottom: 20px; }
+  .title h2 {
+    font-size: 11px;
+    width: 60%; }
+
+.container {
+  background: #24282f;
+  width: 1400px;
+  display: inline-block; }
+  .container .logo {
+    display: inline-block;
+    float: left;
+    margin-top: 30px; }
+    .container .logo:after {
+      content: "";
+      clear: both;
+      display: inline-block; }
+  .container .menu {
+    display: inline-block;
+    float: right; }
+  .container ul {
+    display: inline-block;
+    margin: 30px 20px 0 15px; }
+    .container ul li {
+      margin-left: 40px;
+      padding-bottom: 43px;
+      font-size: 15px;
+      list-style-type: none;
+      border-bottom: 1px solid transparent; }
+      .container ul li a {
+        text-transform: uppercase;
+        color: white;
+        text-decoration: none;
+        display: inline-block;
+        font: 400 14px Arial Helvetica sans-serif; }
+      .container ul li:hover {
+        border-bottom: 1px solid yellow; }
+    .container ul:after {
+      content: "";
+      clear: both;
+      display: inline-block; }
+
+/*# sourceMappingURL=stule.css.map */
