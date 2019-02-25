@@ -9,7 +9,8 @@ header {
 .title {
   background: rgba(0, 0, 0, 0.85);
   padding: 90px 0 110px 0;
-  color: white; }
+  color: white;
+  margin-bottom: 139px; }
   .title h1 {
     font-size: 30px;
     margin-bottom: 20px; }
@@ -18,7 +19,7 @@ header {
     width: 60%; }
 
 .container {
-  background: #24282f;
+  background-color: #24282f;
   width: 1400px;
   display: inline-block; }
   .container .logo {
@@ -53,5 +54,100 @@ header {
       content: "";
       clear: both;
       display: inline-block; }
+
+.container_owl {
+  max-width: 1140px;
+  margin-bottom: 20px; }
+  .container_owl h3 {
+    text-align: center;
+    font-size: 22px; }
+    .container_owl h3:after {
+      display: block;
+      content: "";
+      margin: auto;
+      margin-top: 15px;
+      margin-bottom: 30px;
+      background-color: #b5a263;
+      height: 2px;
+      width: 50px; }
+
+.page_1 {
+  display: flex;
+  justify-content: space-between; }
+
+.description {
+  display: flex;
+  justify-content: space-between; }
+  .description .name {
+    margin-top: 25px;
+    margin-left: 12px; }
+    .description .name p:last-child {
+      color: #b5a263; }
+  .description ul {
+    margin-top: 25px; }
+    .description ul li {
+      margin: 6px;
+      background-color: #869791;
+      border-radius: 50%;
+      display: inline-block;
+      list-style-type: none;
+      padding: 6px; }
+    .description ul a {
+      color: #FFFFFF; }
+
+.container_owl_2 {
+  position: relative;
+  max-width: 1140px;
+  margin-top: 34px;
+  padding-top: 111px;
+  background-color: #f7f7f7; }
+  .container_owl_2 h4 {
+    text-align: center;
+    font-size: 22px; }
+    .container_owl_2 h4:after {
+      display: block;
+      content: "";
+      margin: auto;
+      margin-top: 15px;
+      margin-bottom: 30px;
+      background-color: black;
+      height: 2px;
+      width: 50px; }
+  .container_owl_2 .commit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .container_owl_2 .commit img {
+      width: 5%; }
+    .container_owl_2 .commit p {
+      text-align: center;
+      width: 50%; }
+  .container_owl_2 .owl-nav .owl-prev:after {
+    display: block;
+    content: "<";
+    font-size: 30px;
+    color: red; }
+  .container_owl_2 .owl-nav .owl-prev {
+    position: absolute;
+    left: -60px;
+    top: 40%; }
+  .container_owl_2 .owl-nav .owl-next:after {
+    display: block;
+    content: ">";
+    font-size: 30px;
+    color: red;
+    font-weight: bold; }
+  .container_owl_2 .owl-nav .owl-next {
+    position: absolute;
+    right: -60px;
+    top: 40%; }
+
+footer {
+  max-width: 1140px;
+  display: flex;
+  justify-content: space-between; }
+  footer div {
+    width: 30%; }
 
 /*# sourceMappingURL=stule.css.map */
