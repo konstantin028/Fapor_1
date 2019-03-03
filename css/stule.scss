@@ -3,58 +3,25 @@
   margin: 0;
   padding: 0;
 }
-header{
-  background: url("../img/bacgraund.png") center center ;
-  background-size: cover;
+.container{
+  max-width: 1400px;
+  margin: auto;
 }
-
-.title {
-  background: rgba(0, 0, 0, 0.85);;
-padding: 90px 0 110px 0 ;
-  color: white;
-  margin-bottom: 139px;
-
-  h1{
-
-    font-size:  30px;
-    margin-bottom: 20px;
-  }
-  h2{
-    font-size: 11px;
-
-    width: 60%;
-
+header {
+  background: #24282f;
+  .z_container{
+    display: flex;
+    justify-content: space-between;
 
   }
-}
-
-.container {
-  background-color: #24282f;
-  width: 1400px;
-  display: inline-block;
-
-  .logo {
-    display: inline-block;
-    float: left;
-    margin-top:30px;
-
-    &:after {
-      content: "";
-      clear: both;
-      display: inline-block;
-    }
+  .logo{
+    margin-top: 30px;
   }
-
-  .menu {
-    display: inline-block;
-    float: right;
-  }
-
   ul {
-    display: inline-block;
+
     margin: 30px 20px 0 15px;
 
-    li {
+    li { display: inline-block;
       margin-left: 40px;
       padding-bottom: 43px;
       font-size: 15px;
@@ -76,14 +43,38 @@ padding: 90px 0 110px 0 ;
     }
 
 
-    &:after {
-      content: "";
-      clear: both;
-      display: inline-block;
-    }
+
   }
 }
-.container_owl{
+
+  .title {
+    background: url("../img/bacgraund.png") center center;
+    background-size: cover;
+
+
+    .more_about{
+      padding: 90px 0 110px 0;
+      color: white;
+      margin-bottom: 139px;
+    }
+
+
+
+  h1{
+
+    font-size:  30px;
+    margin-bottom: 20px;
+  }
+  h2{
+    font-size: 13px;
+
+    width: 60%;
+
+
+  }
+}
+
+.container_M{
   max-width: 1140px;
   margin-bottom: 20px;
   h3{ text-align: center;
@@ -108,9 +99,7 @@ padding: 90px 0 110px 0 ;
   justify-content: space-between;
 }
 
-  .img{
 
-  }
 
 .description{
 display: flex;
@@ -119,7 +108,7 @@ display: flex;
   .name{
     margin-top: 25px;
     margin-left: 12px;
-    p:last-child{
+    .gold{
       color: #b5a263;
     }
   }
@@ -142,12 +131,38 @@ margin-top: 25px;
    }
  }
 }
-.container_owl_2{
+.show_all{
+  margin-top: 34px;
+  text-align: center;
+
+a{ border-radius: 25px;
+  border-style: solid;
+  text-decoration: none;
+  color: black;
+font-size: 14px;
+  padding: 16px 33px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container_owl{
   position: relative;
-  max-width: 1140px;
+
   margin-top: 34px;
   padding-top: 111px;
-  background-color: #f7f7f7;
+
+  background: #f7f7f7;
   h4{ text-align: center;
     font-size: 22px;
 
@@ -163,24 +178,33 @@ margin-top: 25px;
 
     }
   }
+
   .commit{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 116px;
 
-    img{
+    .owl-carousel .owl-item img {
+      display: block;
       width: 5%;
     }
-    p{
+.img{
+  margin-bottom: 36px;
+}
+    .gold{
       text-align: center;
       width: 50%;
-    }
-  }.owl-nav .owl-prev:after {
+      margin-bottom: 44px;
+      color: #b5a263;
+
+  }
+  .owl-nav .owl-prev:after {
      display: block;
      content: "<";
      font-size: 30px;
-     color: red;
+     color: black;
    }
 
   .owl-nav .owl-prev {
@@ -193,7 +217,7 @@ margin-top: 25px;
     display: block;
     content: ">";
     font-size: 30px;
-    color: red;
+    color: black;
     font-weight: bold;
   }
 
@@ -211,5 +235,5 @@ footer{
   div {
     width: 30%;
   }
-}
+}}
 

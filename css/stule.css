@@ -2,66 +2,56 @@
   margin: 0;
   padding: 0; }
 
-header {
-  background: url("../img/bacgraund.png") center center;
-  background-size: cover; }
-
-.title {
-  background: rgba(0, 0, 0, 0.85);
-  padding: 90px 0 110px 0;
-  color: white;
-  margin-bottom: 139px; }
-  .title h1 {
-    font-size: 30px;
-    margin-bottom: 20px; }
-  .title h2 {
-    font-size: 11px;
-    width: 60%; }
-
 .container {
-  background-color: #24282f;
-  width: 1400px;
-  display: inline-block; }
-  .container .logo {
-    display: inline-block;
-    float: left;
+  max-width: 1400px;
+  margin: auto; }
+
+header {
+  background: #24282f; }
+  header .z_container {
+    display: flex;
+    justify-content: space-between; }
+  header .logo {
     margin-top: 30px; }
-    .container .logo:after {
-      content: "";
-      clear: both;
-      display: inline-block; }
-  .container .menu {
-    display: inline-block;
-    float: right; }
-  .container ul {
-    display: inline-block;
+  header ul {
     margin: 30px 20px 0 15px; }
-    .container ul li {
+    header ul li {
+      display: inline-block;
       margin-left: 40px;
       padding-bottom: 43px;
       font-size: 15px;
       list-style-type: none;
       border-bottom: 1px solid transparent; }
-      .container ul li a {
+      header ul li a {
         text-transform: uppercase;
         color: white;
         text-decoration: none;
         display: inline-block;
         font: 400 14px Arial Helvetica sans-serif; }
-      .container ul li:hover {
+      header ul li:hover {
         border-bottom: 1px solid yellow; }
-    .container ul:after {
-      content: "";
-      clear: both;
-      display: inline-block; }
 
-.container_owl {
+.title {
+  background: url("../img/bacgraund.png") center center;
+  background-size: cover; }
+  .title .more_about {
+    padding: 90px 0 110px 0;
+    color: white;
+    margin-bottom: 139px; }
+  .title h1 {
+    font-size: 30px;
+    margin-bottom: 20px; }
+  .title h2 {
+    font-size: 13px;
+    width: 60%; }
+
+.container_M {
   max-width: 1140px;
   margin-bottom: 20px; }
-  .container_owl h3 {
+  .container_M h3 {
     text-align: center;
     font-size: 22px; }
-    .container_owl h3:after {
+    .container_M h3:after {
       display: block;
       content: "";
       margin: auto;
@@ -81,7 +71,7 @@ header {
   .description .name {
     margin-top: 25px;
     margin-left: 12px; }
-    .description .name p:last-child {
+    .description .name .gold {
       color: #b5a263; }
   .description ul {
     margin-top: 25px; }
@@ -95,16 +85,26 @@ header {
     .description ul a {
       color: #FFFFFF; }
 
-.container_owl_2 {
+.show_all {
+  margin-top: 34px;
+  text-align: center; }
+  .show_all a {
+    border-radius: 25px;
+    border-style: solid;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    padding: 16px 33px; }
+
+.container_owl {
   position: relative;
-  max-width: 1140px;
   margin-top: 34px;
   padding-top: 111px;
-  background-color: #f7f7f7; }
-  .container_owl_2 h4 {
+  background: #f7f7f7; }
+  .container_owl h4 {
     text-align: center;
     font-size: 22px; }
-    .container_owl_2 h4:after {
+    .container_owl h4:after {
       display: block;
       content: "";
       margin: auto;
@@ -113,41 +113,46 @@ header {
       background-color: black;
       height: 2px;
       width: 50px; }
-  .container_owl_2 .commit {
+  .container_owl .commit {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; }
-    .container_owl_2 .commit img {
+    align-items: center;
+    padding-bottom: 116px; }
+    .container_owl .commit .owl-carousel .owl-item img {
+      display: block;
       width: 5%; }
-    .container_owl_2 .commit p {
+    .container_owl .commit .img {
+      margin-bottom: 36px; }
+    .container_owl .commit .gold {
       text-align: center;
-      width: 50%; }
-  .container_owl_2 .owl-nav .owl-prev:after {
-    display: block;
-    content: "<";
-    font-size: 30px;
-    color: red; }
-  .container_owl_2 .owl-nav .owl-prev {
-    position: absolute;
-    left: -60px;
-    top: 40%; }
-  .container_owl_2 .owl-nav .owl-next:after {
-    display: block;
-    content: ">";
-    font-size: 30px;
-    color: red;
-    font-weight: bold; }
-  .container_owl_2 .owl-nav .owl-next {
-    position: absolute;
-    right: -60px;
-    top: 40%; }
-
-footer {
-  max-width: 1140px;
-  display: flex;
-  justify-content: space-between; }
-  footer div {
-    width: 30%; }
+      width: 50%;
+      margin-bottom: 44px;
+      color: #b5a263; }
+    .container_owl .commit .owl-nav .owl-prev:after {
+      display: block;
+      content: "<";
+      font-size: 30px;
+      color: black; }
+    .container_owl .commit .owl-nav .owl-prev {
+      position: absolute;
+      left: -60px;
+      top: 40%; }
+    .container_owl .commit .owl-nav .owl-next:after {
+      display: block;
+      content: ">";
+      font-size: 30px;
+      color: black;
+      font-weight: bold; }
+    .container_owl .commit .owl-nav .owl-next {
+      position: absolute;
+      right: -60px;
+      top: 40%; }
+  .container_owl footer {
+    max-width: 1140px;
+    display: flex;
+    justify-content: space-between; }
+    .container_owl footer div {
+      width: 30%; }
 
 /*# sourceMappingURL=stule.css.map */
