@@ -11,25 +11,25 @@ header {
   header .z_container {
     display: flex;
     justify-content: space-between; }
-  header .logo {
-    margin-top: 30px; }
-  header ul {
-    margin: 30px 20px 0 15px; }
-    header ul li {
-      display: inline-block;
-      margin-left: 40px;
-      padding-bottom: 43px;
-      font-size: 15px;
-      list-style-type: none;
-      border-bottom: 1px solid transparent; }
-      header ul li a {
-        font-family: 'Open Sans', sans-serif;
-        text-transform: uppercase;
-        color: white;
-        text-decoration: none;
-        display: inline-block; }
-      header ul li:hover {
-        border-bottom: 1px solid yellow; }
+    header .z_container .logo {
+      margin-top: 30px; }
+    header .z_container ul {
+      margin: 30px 20px 0 15px; }
+      header .z_container ul li {
+        display: inline-block;
+        margin-left: 40px;
+        padding-bottom: 43px;
+        font-size: 15px;
+        list-style-type: none;
+        border-bottom: 1px solid transparent; }
+        header .z_container ul li a {
+          font-family: 'Open Sans', sans-serif;
+          text-transform: uppercase;
+          color: white;
+          text-decoration: none;
+          display: inline-block; }
+        header .z_container ul li:hover {
+          border-bottom: 1px solid yellow; }
 
 .title {
   background: url("../img/bacgraund.png") center center;
@@ -79,18 +79,17 @@ header {
   .description .gold {
     color: #b5a263;
     font-family: 'Open Sans', sans-serif; }
-
-ul {
-  margin-top: 25px; }
-  ul li {
-    margin: 6px;
-    background-color: #869791;
-    border-radius: 50%;
-    display: inline-block;
-    list-style-type: none;
-    padding: 6px; }
-  ul a {
-    color: #FFFFFF; }
+  .description ul {
+    margin-top: 25px; }
+    .description ul li {
+      margin: 6px;
+      background-color: #869791;
+      border-radius: 50%;
+      display: inline-block;
+      list-style-type: none;
+      padding: 6px; }
+    .description ul a {
+      color: #FFFFFF; }
 
 .show_all {
   margin-top: 34px;
@@ -98,7 +97,7 @@ ul {
   .show_all a {
     font-family: 'Open Sans', sans-serif;
     border-radius: 25px;
-    border-style: solid;
+    border: solid 1px;
     text-decoration: none;
     color: black;
     font-size: 14px;
@@ -188,6 +187,20 @@ ul {
 
 .contact_info p {
   margin-bottom: 24px; }
+
+.form {
+  max-width: 300px;
+  margin: auto; }
+  .form input {
+    background: #2b2f35;
+    color: #6e7279;
+    line-height: 40px;
+    width: 100%;
+    border: solid 1px #6e7279;
+    padding-left: 10px;
+    margin-bottom: 10px; }
+    .form input:hover {
+      background: #b5a263; }
 
 .footer_2 {
   background: #24282f; }
